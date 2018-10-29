@@ -18,10 +18,12 @@ from django.conf.urls import include
 from django.urls import path
 from rest_framework import routers
 
-from jogador.api.viewsets import JogadorViewSet
+from jogador.api.viewsets import JogadorViewSet, UserViewSet, MissaoViewSet
 
 router = routers.DefaultRouter()
 router.register(r'jogador', JogadorViewSet)
+router.register(r'user', UserViewSet)
+router.register(r'missao', MissaoViewSet)
 
 urlpatterns = [
     path('', include(router.urls)),
