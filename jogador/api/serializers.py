@@ -112,11 +112,11 @@ class MissaoSerializer(serializers.ModelSerializer):
     jogador = serializers.PrimaryKeyRelatedField(queryset=Jogador.objects.all(), many=False)
     class Meta:
         model = Missao
-        fields = ('id', 'jogador', 'nome_missao', 'xp_missao', 'data', 'nice_tempo', 'status', 'id_issue')
+        fields = ('id', 'jogador', 'nome_missao', 'xp_missao', 'data', 'nice_tempo', 'status', 'id_issue', 'id_projeto')
 
 class CriarMissaoSerializer(serializers.ModelSerializer):    
     jogador = serializers.PrimaryKeyRelatedField(queryset=Jogador.objects.all(), many=False)
     class Meta:
         model = Missao
-        fields = ('jogador', 'nome_missao', 'xp_missao', 'data', 'status', 'nice_tempo', 'id_issue')
+        fields = ('jogador', 'nome_missao', 'xp_missao', 'data', 'status', 'nice_tempo', 'id_issue', 'id_projeto')
 

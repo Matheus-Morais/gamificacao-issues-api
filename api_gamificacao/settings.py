@@ -64,7 +64,8 @@ CORS_ORIGIN_WHITELIST = (
     # 'localhost:8000',
     # '127.0.0.1:8000',
     'localhost:4200',
-    '127.0.0.1:4200'
+    '127.0.0.1:4200',
+    'https://matheus-morais.github.io/gamIssues/'
 )
 
 CORS_ALLOW_METHODS = (
